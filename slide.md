@@ -37,7 +37,7 @@
 * この数列のことをフィボナッチ数列と呼ぶ              <!-- .element: class="fragment" -->
   * 数自体はフィボナッチ数と呼ばれる
 * プログラミングの演習問題としてよく見かける              <!-- .element: class="fragment" -->
-* 詳しくはぐぐって！！
+* 詳しくはぐぐって！！                        <!-- .element: class="fragment" -->
 
 ---
 
@@ -113,7 +113,7 @@ fibonacci(9) => 34
 
 ---
 
-### こうするのじゃ！
+#### こうするのじゃ！
 
 ```ruby
 def fibonacci0
