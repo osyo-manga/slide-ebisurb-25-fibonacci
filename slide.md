@@ -174,8 +174,7 @@ class Fib
 end
 
 fib = Fib.new
-p fib.fibonacci(4)  # => 3
-fib.fibonacci(0)  # => 0
+p fib.fibonacci(0)  # => 0
 p fib.fibonacci(1)  # => 1
 p fib.fibonacci(2)  # => 1
 p fib.fibonacci(3)  # => 2
