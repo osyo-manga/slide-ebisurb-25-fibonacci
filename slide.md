@@ -92,6 +92,7 @@ pp (1..10).map { |it| fibonacci it }
 
 * fibonacci(n) を呼び出した時にその結果をキャシュしておく
 * そうすることで2回目以降はキャッシュした結果を返すだけなので計算が必要なくなる
+* いわゆるメモ化ってやつ
 
 ```
 fibonacci(0) => 0
@@ -102,8 +103,6 @@ fibonacci(4) => 3
 fibonacci(5) => 5
 fibonacci(6) => 8
 fibonacci(7) => 13
-fibonacci(8) => 21
-fibonacci(9) => 34
 ...
 ```
 
