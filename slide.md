@@ -50,10 +50,10 @@
 
 ```ruby
 def fibonacci(n)
-  if n >= 2
-    fibonacci(n - 2) + fibonacci(n - 1)
-  else
+  if n <= 1
     n
+  else
+    fibonacci(n - 2) + fibonacci(n - 1)
   end
 end
 
@@ -165,19 +165,19 @@ class Fib
   def method_missing name, *args
     return super if name !~ /fibonacci_(\d+)/
     num = $1.to_i
-    if num >= 2
-      num = fibonacci(num - 2) + fibonacci(num - 1)
+    result = if num <= 1
+      num
+    else
+      fibonacci(num - 2) + fibonacci(num - 1)
     end
-    define_singleton_method(name) { num }
-    num
+    define_singleton_method(name) { result }
+    result
   end
 end
 
 fib = Fib.new
-p fib.fibonacci(0)  # => 0
-p fib.fibonacci(1)  # => 1
-p fib.fibonacci(2)  # => 1
-p fib.fibonacci(3)  # => 2
+p (0..10).map { |n| fib.fibonacci(n) }
+# => [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
 
 ---
@@ -185,7 +185,7 @@ p fib.fibonacci(3)  # => 2
 ### まとめ
 - - -
 
-* メタプログラミング楽しー        <!-- .element: class="fragment" -->
+# メタプログラミング楽しー        <!-- .element: class="fragment" -->
 
 
 ---
