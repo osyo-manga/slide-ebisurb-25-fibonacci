@@ -48,7 +48,7 @@
 
 ```ruby
 def fibonacci(n)
-  if n >= 1
+  if n >= 2
     fibonacci(n - 2) + fibonacci(n - 1)
   else
     n
@@ -143,6 +143,15 @@ end
 
 ---
 
+## 必要なもの
+- - -
+
+* send               <!-- .element: class="fragment" -->
+* method_missing              <!-- .element: class="fragment" -->
+* define_singleton_method              <!-- .element: class="fragment" -->
+
+---
+
 #### 実装
 - - -
 
@@ -155,7 +164,7 @@ class Fib
   def method_missing name, *args
     return super if name !~ /fibonacci_(\d+)/
     num = $1.to_i
-    if num >= 1
+    if num >= 2
       num = fibonacci(num - 2) + fibonacci(num - 1)
     end
     define_singleton_method(name) { num } && num
