@@ -168,16 +168,17 @@ class Fib
     if num >= 2
       num = fibonacci(num - 2) + fibonacci(num - 1)
     end
-    define_singleton_method(name) { num } && num
+    define_singleton_method(name) { num }
+    num
   end
 end
 
 fib = Fib.new
-p fib.fibonacci(0)  # => 0
+p fib.fibonacci(4)  # => 3
+fib.fibonacci(0)  # => 0
 p fib.fibonacci(1)  # => 1
 p fib.fibonacci(2)  # => 1
 p fib.fibonacci(3)  # => 2
-p fib.fibonacci(4)  # => 3
 ```
 
 ---
