@@ -11,7 +11,7 @@
 * なまえ  : おしょー
 * github  : [osyo-manga](https://github.com/osyo-manga)
 * ブログ  : [Secret Garden(Instrumental)](http://secret-garden.hatenablog.com)
-* Rails 歴 1年半              <!-- .element: class="fragment" -->
+* Rails 歴 1年半のクソザコナメクジ              <!-- .element: class="fragment" -->
 * 趣味で Ruby にパッチを投げたりしてます              <!-- .element: class="fragment" -->
 * 最近のトレンド              <!-- .element: class="fragment" -->
   * `binding_of_caller`
@@ -175,7 +175,7 @@ p fib.fibonacci(4)  # => 3
 ### まとめ
 - - -
 
-* メタプログラミング楽しー
+* メタプログラミング楽しー        <!-- .element: class="fragment" -->
 
 
 ---
