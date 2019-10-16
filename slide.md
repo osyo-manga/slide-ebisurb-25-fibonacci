@@ -9,6 +9,7 @@
 - - -
 
 * なまえ  : おしょー
+* Twitter : [@pink_bangbi](https://twitter.com/pink_bangbi)
 * github  : [osyo-manga](https://github.com/osyo-manga)
 * ブログ  : [Secret Garden(Instrumental)](http://secret-garden.hatenablog.com)
 * Rails 歴 1年半のクソザコナメクジ              <!-- .element: class="fragment" -->
